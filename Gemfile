@@ -1,10 +1,11 @@
 source 'https://rubygems.org'
-ruby "2.3.5"
+
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
-gem 'rails', '4.2.6'
+gem 'rails', '4.2.8'
 # Use postgresql as the database for Active Record
-gem 'pg'
+gem 'pg', '0.18.4'
+gem 'rails_12factor'
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 5.0'
 # Use Uglifier as compressor for JavaScript assets
@@ -52,6 +53,9 @@ group :development do
 
   # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
   gem 'spring'
+
+  # Testing
+  gem 'rspec-rails', '~> 3.5'
 end
 
 group :production do
